@@ -151,7 +151,7 @@ html {
     transform: translate(-50%, -50%);
     text-align: center;
     display: block;
-    line-height: 21px;
+    line-height: 12px;
     transition: 0.5s;
     display: flex;
     justify-content: center;
