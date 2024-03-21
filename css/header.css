@@ -29,7 +29,7 @@ html {
 }
 
 #header-img {
-    background-image: url(../resource/image/bg2.jpg);
+    background-image: url(../resource/image/bg3.jpg);
     background-color: rgba(165, 165, 165, 0.2);
     background-blend-mode: multiply;
     background-position: center;
@@ -217,6 +217,7 @@ html {
     transition: 0.5s;
     padding: 9px;
     margin: 10px;
+    margin-bottom: 10px;
 }
 
 .commission-btn:hover {

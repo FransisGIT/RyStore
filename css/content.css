@@ -1138,6 +1138,8 @@ body {
 
 .footer {
     margin-top: 35px;
+    display: grid;
+    grid-column-start: auto;
 }
 
 .list-font-style {
@@ -1261,7 +1263,7 @@ a:active {
     margin-left: 5px;
 }
 
-.box-grid {
+.box-size {
     max-width: 500px;
     margin: 0 auto;
     display: grid;
@@ -1302,6 +1304,18 @@ a:active {
 @media screen and (min-width: 411px) and (max-width: 899px) {
     .dropdown:hover .dropdown-content {
         padding-right: 6px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .commission-btn {
+        font-size: calc(11.9px / 1);
+    }
+}
+
+@media (max-width: 530px) {
+    .box-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
