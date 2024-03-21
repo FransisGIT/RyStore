@@ -1357,6 +1357,23 @@ a:active {
     }
 }
 
+@media screen and (max-width: 800px) {
+    .logo-head {
+        padding-top: 10px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 899px) {
+    .logo-head {
+        width: fit-content;
+        padding-top: 5px;
+    }
+
+    .logo-head .logo {
+        width: 200px;
+    }
+}
+
 @media screen and (max-width: 530px) {
     .commission-btn {
         font-size: calc(16.5px / 1);
@@ -1406,7 +1423,6 @@ a:active {
 .logo-head {
     padding-right: 20px;
     padding-left: 20px;
-    padding-top: 10px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1453,7 +1469,7 @@ a:active {
     }
 
     .corner-left {
-        background: linear-gradient(90deg, rgba(18, 138, 250, 1) 0%, rgba(105, 182, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+        background: linear-gradient(90deg, rgba(18, 138, 250, 1) 0%, rgba(105, 182, 255, 1) 50%, rgba(105, 182, 255, 1) 100%);
         width: auto;
         padding-left: 90px;
         height: 2px;
@@ -1461,7 +1477,7 @@ a:active {
     }
 
     .corner-right {
-        background: linear-gradient(90deg, rgba(18, 138, 250, 1) 0%, rgba(105, 182, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+        background: linear-gradient(90deg, rgba(105, 182, 255, 1) 0%, rgba(105, 182, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
         width: auto;
         padding-right: 90px;
         height: 2px;
@@ -1474,14 +1490,14 @@ a:active {
 
 
     .corner-left {
-        background: linear-gradient(90deg, rgba(18, 138, 250, 1) 0%, rgba(105, 182, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+        background: linear-gradient(90deg, rgba(18, 138, 250, 1) 0%, rgba(105, 182, 255, 1) 50%, rgba(105, 182, 255, 1) 100%);
         width: 100px;
         height: 2px;
         margin-top: 40px;
     }
 
     .corner-right {
-        background: linear-gradient(90deg, rgba(18, 138, 250, 1) 0%, rgba(105, 182, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+        background: linear-gradient(90deg, rgba(105, 182, 255, 1) 0%, rgba(105, 182, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
         width: 100px;
         height: 2px;
     }
@@ -1490,14 +1506,14 @@ a:active {
 @media screen and (max-width: 547) {
 
     .corner-left {
-        background: linear-gradient(90deg, rgba(18, 138, 250, 1) 0%, rgba(105, 182, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+        background: linear-gradient(90deg, rgba(18, 138, 250, 1) 0%, rgba(105, 182, 255, 1) 50%, rgba(105, 182, 255, 1) 100%);
         width: 50px;
         height: 2px;
         margin-top: 40px;
     }
 
     .corner-right {
-        background: linear-gradient(90deg, rgba(18, 138, 250, 1) 0%, rgba(105, 182, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+        background: linear-gradient(90deg, rgba(105, 182, 255, 1) 0%, rgba(105, 182, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
         width: 50px;
         height: 2px;
     }
