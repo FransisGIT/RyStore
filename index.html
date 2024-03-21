@@ -237,13 +237,47 @@
                                             <span class="outline-1">Discord</span>
                                         </a>
 
-                                        <a class="commission-btn box-bold btn-sm"
-                                            href="https://wa.me/+628995427462?text=halo%20:>">
+                                        <a class="commission-btn box-bold btn-sm" href="javascript:void(0)"
+                                            id="openModal">
                                             <span class="outline-1">Bukti Buyer</span>
                                         </a>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Modal -->
+                            <div id="myModal" class="modal">
+                                <h3 class="bukti-buyer-text">Bukti Buyer</h3>
+                                <span class="close">&times;</span>
+                                <div class="grid">
+                                    <img class="modal-content" src="resource/list.jpeg" width="190"
+                                        onclick="location.href='resource/list.jpeg'">
+                                    <img class="modal-content" src="resource/daily.png" width="190"
+                                        onclick="location.href='resource/daily.png'">
+                                    <img class="modal-content" src="resource/daily.png" width="190"
+                                        onclick="location.href='resource/daily.png'">
+                                    <img class="modal-content" src="resource/daily.png" width="190"
+                                        onclick="location.href='resource/daily.png'">
+                                    <img class="modal-content" src="resource/daily.png" width="190"
+                                        onclick="location.href='resource/daily.png'">
+                                    <img class="modal-content" src="resource/daily.png" width="190"
+                                        onclick="location.href='resource/daily.png'">
+                                    <img class="modal-content" src="resource/daily.png" width="190"
+                                        onclick="location.href='resource/daily.png'">
+                                    <img class="modal-content" src="resource/daily.png" width="190"
+                                        onclick="location.href='resource/daily.png'">
+                                    <img class="modal-content" src="resource/daily.png" width="190"
+                                        onclick="location.href='resource/daily.png'">
+                                    <img class="modal-content" src="resource/daily.png" width="190"
+                                        onclick="location.href='resource/daily.png'">
+                                    <img class="modal-content" src="resource/daily.png" width="190"
+                                        onclick="location.href='resource/daily.png'">
+                                    <img class="modal-content" src="resource/daily.png" width="190"
+                                        onclick="location.href='resource/daily.png'">
+                                    <img class="modal-content" src="resource/daily.png" width="190"
+                                        onclick="location.href='resource/daily.png'">
+                                </div>
+                            </div>
+
                             <div class="border-white"></div>
                         </div>
                     </div>
@@ -253,7 +287,35 @@
         </div>
     </div>
 </body>
+<script>
+    // Mendapatkan tombol "Bukti Buyer"
+    var btn = document.getElementById("openModal");
 
+    // Mendapatkan modal
+    var modal = document.getElementById("myModal");
+
+    // Mendapatkan tombol close
+    var closeBtn = document.querySelector(".close");
+
+    // Ketika tombol "Bukti Buyer" ditekan
+    btn.onclick = function () {
+        // Tampilkan modal
+        modal.style.display = "block";
+    }
+
+    // Ketika pengguna mengklik tombol close
+    closeBtn.onclick = function () {
+        // Sembunyikan modal
+        modal.style.display = "none";
+    }
+
+    // Ketika pengguna mengklik di luar modal, sembunyikan modal
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
 <script src="fontawesome/js/all.min.js"></script>
 <!--Page loading animation when loading is complete-->
 <script>
