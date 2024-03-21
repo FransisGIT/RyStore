@@ -207,22 +207,39 @@ html {
     position: relative;
     /* display: inline-block; */
     font-style: bold;
-    font-size: 26px;
+    font-size: 20px;
     color: white;
     line-height: 63px;
     align-items: center;
     text-align: center;
-    background: linear-gradient(90deg, rgba(18, 138, 250, 1) 0%, rgba(105, 182, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
-    border-radius: 75px;
+    background-color: white;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    border-radius: 6px;
     transition: 0.5s;
-    padding: 9px;
+    padding: 15px;
     margin: 10px;
     margin-bottom: 10px;
 }
 
-.commission-btn:hover {
-    background: white;
+.button-bg {
+    background-color: white;
+    clip-path: polygon(8% 0%, 100% 0%, 93% 100%, 0% 100%);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: bold;
+    align-items: center;
+    text-align: center !important;
+    transition: all 0.35s ease-out;
     color: black;
+}
+
+.button-bg:hover {
+    color: white;
+    background-color: rgba(12, 23, 42, 0.861);
 }
 
 /*---------------------------------------------------------------------------------------------------*/

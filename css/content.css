@@ -1132,14 +1132,14 @@ body {
     font-weight: bold;
 }
 
-.outline-1 {
-    -webkit-text-stroke: 1px black;
+.footer {
+    margin-top: 35px;
 }
 
-.footer {
-    margin-top: 5px;
-    display: grid;
-    grid-column-start: auto;
+.display-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .list-font-style {
@@ -1149,8 +1149,8 @@ body {
 
 .box {
     background-color: rgba(12, 23, 42, 0.861);
-    -webkit-backdrop-filter: blur(6px);
-    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
     height: auto;
     width: 880px;
     border-radius: 20px;
@@ -1210,16 +1210,14 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    min-width: 160px;
+    min-width: 100%;
     top: 0;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 10px;
     background-color: #ffffff;
     opacity: 0;
-    /* Set opasitas awal menjadi 0 */
     transform: translateY(-10px);
-    /* Geser dropdown ke atas sedikit */
     transition: opacity 0.3s ease-out, transform 0.3s ease-out;
 }
 
@@ -1286,10 +1284,6 @@ a:active {
     align-items: center;
 }
 
-.gap-footer {
-    gap: 20px;
-}
-
 #cart-icon {
     width: 20px;
     height: 20px;
@@ -1313,10 +1307,28 @@ a:active {
     background-color: rgba(12, 23, 42, 0.861);
 }
 
-.modal-content {
-    max-width: calc(50% - 20px);
-    max-height: 80%;
-    border-radius: 10px;
+
+
+@media screen and (max-width:456px) {
+    .modal-content {
+        max-width: calc(45% - 20px);
+        width: fit-content;
+        max-height: 100%;
+        border-radius: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width:457px) {
+    .modal-content {
+        max-width: calc(25% - 20px);
+        width: fit-content;
+        max-height: 100%;
+        border-radius: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
 }
 
 /* Style untuk tombol close */
@@ -1374,6 +1386,13 @@ a:active {
     }
 }
 
+@media screen and (max-width: 593px) {
+    .commission-btn {
+        font-size: calc(16.5px / 1);
+    }
+}
+
+
 @media screen and (max-width: 530px) {
     .commission-btn {
         font-size: calc(16.5px / 1);
@@ -1425,6 +1444,18 @@ a:active {
     padding-left: 20px;
 }
 
+@media screen and (max-width: 899px) {
+    .list2 {
+        left: 85px;
+    }
+}
+
+@media screen and (min-width:900px)and (max-width: 1023px) {
+    #list2 {
+        left: 90px;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     .logo-head {
         display: flex;
@@ -1458,6 +1489,10 @@ a:active {
         padding-right: 150px;
         height: 2px;
         margin-top: 40px;
+    }
+
+    .Title .box .box-content .logo-head #list2 {
+        left: 70px;
     }
 }
 
